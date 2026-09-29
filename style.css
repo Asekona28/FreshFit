@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+color: #222;
+background: #f8fff9;
+line-height: 1.6;
+}
+
+header {
+background: #fff;
+padding: 20px 8%;
+border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+font-size: 28px;
+font-weight: bold;
+text-decoration: none;
+color: #222;
+}
+
+.logo span,
+a:hover {
+color: #22a652;
+}
+
+.nav-links {
+display: flex;
+gap: 25px;
+list-style: none;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #222;
+font-weight: bold;
+}
+
+.nav-links .active {
+color: #22a652;
+}
+
+/* General */
+
+.hero,
+.page-header {
+text-align: center;
+padding: 80px 20px;
+}
+
+.hero {
+background: #dcfce7;
+}
+
+.hero h1,
+.page-header h1 {
+font-size: 50px;
+margin: 15px 0;
+}
+
+.hero h1 span {
+color: #22a652;
+}
+
+.hero p,
+.page-header p {
+max-width: 650px;
+margin: 0 auto 25px;
+color: #555;
+}
+
+.btn {
+display: inline-block;
+background: #22a652;
+color: white;
+padding: 12px 25px;
+border-radius: 6px;
+text-decoration: none;
+border: none;
+cursor: pointer;
+font-weight: bold;
+}
+
+.btn:hover {
+background: #16803d;
+color: white;
+}
+
+/* Cards */
+
+.features,
+.products-section,
+.about-section,
+.values,
+.persona,
+.contact-section {
+padding: 60px 8%;
+}
+
+.features h2,
+.values h2 {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.feature-grid,
+.product-grid,
+.values-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
+}
+
+.feature-card,
+.product-card,
+.value-card,
+.about-highlight,
+.persona-card,
+.contact-form {
+background: white;
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 3px 12px #ddd;
+}
+
+.feature-card {
+text-align: center;
+}
+
+.feature-icon,
+.product-image,
+.persona-icon {
+font-size: 50px;
+text-align: center;
+margin-bottom: 15px;
+}
+
+/* Products */
+
+.product-image {
+background: #dcfce7;
+padding: 30px;
+}
+
+.product-info p,
+.about-text p,
+.persona p,
+.contact-info p {
+color: #555;
+}
+
+.product-bottom {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 20px;
+}
+
+.product-bottom button {
+background: #22a652;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+}
+
+/* About & Contact */
+
+.about-content,
+.contact-section,
+.persona {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+}
+
+.contact-item {
+margin: 20px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 12px;
+margin: 8px 0 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.contact-form textarea {
+resize: vertical;
+}
+
+/* CTA & Footer */
+
+.cta {
+background: #17201b;
+color: white;
+text-align: center;
+padding: 60px 20px;
+}
+
+.cta p {
+margin: 15px;
+}
+
+footer {
+background: #0d1510;
+color: white;
+text-align: center;
+padding: 25px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+.navbar,
+.nav-links {
+flex-direction: column;
+gap: 15px;
+}
+
+```
+.feature-grid,
+.product-grid,
+.values-grid,
+.about-content,
+.contact-section,
+.persona {
+    grid-template-columns: 1fr;
+}
+
+.hero h1,
+.page-header h1 {
+    font-size: 38px;
+}
+```
+
+}
