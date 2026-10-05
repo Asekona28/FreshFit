@@ -151,5 +151,20 @@
     <input type="search" id="searchInput" placeholder="Search FreshFit...">
     <button type="button" onclick="searchWebsite()">Search</button>
 </div>
+</body>
+<script>
+function searchWebsite() {
+    const searchText = document.getElementById("searchInput").value.trim();
 
+    if (searchText === "") {
+        alert("Please enter something to search for.");
+        return;
+    }
 
+    const found = window.find(searchText);
+
+    if (!found) {
+        alert("No results found for: " + searchText);
+    }
+}
+</script>
